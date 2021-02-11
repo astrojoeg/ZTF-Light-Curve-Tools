@@ -94,7 +94,7 @@ def calc_threshold(time,flux,bootnum=10000,percentile=99.9,parallel=False):
   # Make python talk to you to let you know the script is finished
   # os.system("say 'Your bootstrapping routine is finished running.'")
 
-  # Return the 0.1% FAP in both percent and units of the original periodogram's mean amplitude
+  # Return the 0.1% false alarm probability in both percent and units of the original periodogram's mean amplitude
   return fap*1e2, fap/og_mean_amp
 
 ######### Example snippet code to run on a light curves in the Google Drive tarred folder ##########
